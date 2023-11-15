@@ -1,7 +1,7 @@
 # Whisper Models Comparison Experiment
 
 ## Introduction
-This repository contains the results and analysis of an experiment designed to compare the performance of three versions of  Whisper models: OpenAI Whisper v2, OpenAI Whisper v3, and Distil Whisper. The purpose of this experiment was to evaluate and compare the transcription speed of these models on a set of audio files. Additional comparisons on accuracy have been made using the Word Error Rate metric, However, the original transcripts of these audio files were not available for a standardized computation.
+This repository contains the results and analysis of an experiment designed to compare the performance of three versions of  Whisper models: OpenAI Whisper v2, OpenAI Whisper v3, and Distil Whisper. The purpose of this experiment was to evaluate and compare the transcription speed of these models on a set of audio files. 
 
 ## Experiment Setup
 
@@ -29,7 +29,8 @@ It is a distilled version of the Whisper model that is 6 times faster, 49% small
 ### Methodology
 Each audio file was processed by all three models. The key focus was on assessing:
 - **Transcription Speed:** The time taken by each model to transcribe each audio file.
-- **Transcription Accuracy:** Word Error Rate calculation will be provided in a separate notebook. Reference Transcripts are not provided for these audio files to compute an accurate WER.
+
+- **Transcription Accuracy:** Comparisons on accuracy have been made using the Word Error Rate metric, However, the original transcripts of these audio files were not available for a standardized computation. Word Error Rate calculation will be provided in a separate notebook.**(Work In Progress)**
 
 The transcription time was recorded for each model and each audio file.
 
@@ -97,6 +98,11 @@ This comparative analysis can help us align model selection with specific use-ca
 Each of the Whisper notebooks has the following variables, which can be set for reproducing the results
 
 **MODEL_NAME :-** Set this to the HuggingFace Model Repo Name, example **"openai/whisper-large-v2"**
+
 **audio_folder :-** Add your Audio files to this folder and set the path here. The script will take each file and pass it to Whisper one by one, example  **audio_data/**
+
 **text_folder :-** This is where the transcripted text files will be written to, example **text_data/
+
 **task :-** For Transcription task, leave this as **transcribe**, If you want to translate the audio files to English, set this variable to **translate**
+
+
