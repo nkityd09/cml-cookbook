@@ -101,7 +101,7 @@ Each of the Whisper notebooks has the following variables, which can be set for 
 
 **audio_folder :-** Add your Audio files to this folder and set the path here. The script will take each file and pass it to Whisper one by one, example  **audio_data/**
 
-**text_folder :-** This is where the transcripted text files will be written to, example **text_data/
+**text_folder :-** This is where the transcripted text files will be written to, example **text_data/**
 
 **task :-** For Transcription task, leave this as **transcribe**, If you want to translate the audio files to English, set this variable to **translate**
 
